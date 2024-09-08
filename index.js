@@ -235,8 +235,10 @@ app.get('/post/:id', async (req, res) => {
     });
 });
 
+const PORT = process.env.PORT || 5050;
 
-
-app.listen(4000,()=>{
-    console.log(`app running is port ${4000}`)
+app.listen(PORT, () => {
+    console.log(`App running on port ${PORT}`);
 });
+
+
